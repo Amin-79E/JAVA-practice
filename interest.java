@@ -24,7 +24,7 @@ public class interest{
 
         amount_f = principle * Math.pow(1 + rate/times_compounded ,times_compounded * years);
 
-        System.out.printf("The amount after %d years is: %.2f", years, amount_f);
+        System.out.printf("The amount after %d years is: %.2f $", years, amount_f);
 
         scanner.close();
     }
