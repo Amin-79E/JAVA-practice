@@ -10,7 +10,7 @@ public class weight_converter{
 
         System.out.println("This program will convert any weight from kg to lb, or vice versa, please proceed to choose form the options below:");
         System.out.println("Enter 1 if you wish to convert from kg to lb: ");
-        System.out.println("Enter 2 if you wish to convert form lb to kg: ");
+        System.out.println("Enter 2 if you wish to convert from lb to kg: ");
 
         choice = scanner.nextInt();
         if(choice >2 || choice <1 ){
@@ -26,6 +26,9 @@ public class weight_converter{
             System.out.println("Invalid input.");
             scanner.close();
             return;
+        }
+        else if(original ==0){
+            System.out.println("Nothing to convert here");
         }
 
         if(choice == 1){
