@@ -13,18 +13,22 @@ public class weight_converter{
         System.out.println("Enter 2 if you wish to convert form lb to kg: ");
 
         choice = scanner.nextInt();
+        if(choice >2 || choice <1 ){
+            System.out.println("Invalid choice.");
+            scanner.close();
+            return;
+        }
 
         System.out.println("Enter the weight: ");
         original = scanner.nextDouble();
 
-        if(original <= 0 ){
+        if(original < 0 ){
             System.out.println("Invalid input.");
+            scanner.close();
+            return;
         }
 
-        if(choice >2 || choice <1 ){
-            System.out.println("Invalid choice.");
-        }
-        else if(choice == 1){
+        if(choice == 1){
            converted = original * 2.20462;
            System.out.printf("The weight provided, is equivalent to %.3f in lb.\n", converted);
         }
