@@ -29,6 +29,7 @@ public class weight_converter{
         }
         else if(original ==0){
             System.out.println("Nothing to convert here");
+            return;
         }
 
         if(choice == 1){
