@@ -14,6 +14,7 @@ public class circle {
         radius = scanner.nextDouble();
         if(radius <=0){
             System.out.print("Invalid input");
+            scanner.close();
             return;
         }
 
