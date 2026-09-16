@@ -20,7 +20,7 @@ public class circle {
 
         circumference = 2 * Math.PI * radius;
         area = Math.PI * Math.pow(radius, 2);
-        volume = (4.0/3.0) * Math.PI * Math.pow(radius, 3);
+        volume = (4.0/3.0) * Math.PI * Math.pow(radius, 3); // aproperty of a sphere, yet used here purley for educational value.
 
         System.out.printf("The circumference: %,2f ,the area: %.2f ,the volume: %.2f \n", circumference  , area , volume);
 
