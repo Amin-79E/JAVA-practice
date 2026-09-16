@@ -11,6 +11,12 @@ public class Rectangle_area {
     System.out.print("Enter the width of the rectangle: ");
     width = scanner.nextDouble();
 
+    if(width <=0){
+        System.out.println("Invalid input.");
+        scanner.close();
+        return;
+    }
+        
     System.out.print("Enter the height of the rectangle: ");
     height = scanner.nextDouble();
 
