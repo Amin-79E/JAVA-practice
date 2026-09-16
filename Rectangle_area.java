@@ -16,7 +16,7 @@ public class Rectangle_area {
 
     area = height*width;
 
-    System.out.print("The area of the rectangle is: " + area);
+    System.out.printf("The area of the rectangle is: %f ", area);
 
     scanner.close();
     }
