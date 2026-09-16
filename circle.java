@@ -22,7 +22,7 @@ public class circle {
         area = Math.PI * Math.pow(radius, 2);
         volume = (4.0/3.0) * Math.PI * Math.pow(radius, 3);
 
-        System.out.printf("The circumference: %f ,the area: %f ,the volume: %f \n", circumference  , area , volume);
+        System.out.printf("The circumference: %,2f ,the area: %.2f ,the volume: %.2f \n", circumference  , area , volume);
 
         scanner.close();
     }
