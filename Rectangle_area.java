@@ -20,6 +20,12 @@ public class Rectangle_area {
     System.out.print("Enter the height of the rectangle: ");
     height = scanner.nextDouble();
 
+    if(height <=0){
+        System.out.println("Invalid input");
+        scanner.close();
+        return;
+    }
+
     area = height*width;
 
     System.out.printf("The area of the rectangle is: %f ", area);
