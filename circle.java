@@ -12,12 +12,16 @@ public class circle {
 
         System.out.println("Enter the radius of the circle: ");
         radius = scanner.nextDouble();
+        if(radius <=0){
+            System.out.print("Invalid input");
+            return;
+        }
 
         circumference = 2 * Math.PI * radius;
         area = Math.PI * Math.pow(radius, 2);
         volume = (4.0/3.0) * Math.PI * Math.pow(radius, 3);
 
-        System.out.print("The circumference: " + circumference + ", area: " + area + ", volume: " + volume + ".");
+        System.out.printf("The circumference: %f ,the area: %f ,the volume: %f \n", circumference  , area , volume);
 
         scanner.close();
     }
