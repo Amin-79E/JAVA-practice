@@ -8,7 +8,7 @@ public class MAD_LIBS {
         String adjective2;
         String adjective3;
         String noun1;
-        String verb1;
+        String verb;
 
         System.out.print("Enter an adjective: ");
         adjective1 = scanner.nextLine();
@@ -23,7 +23,7 @@ public class MAD_LIBS {
         
         System.out.println("\nToday i went to a " + adjective1 + " zoo.");
         System.out.println("In an exhibit, i saw a " + noun1 + ".");
-        System.out.println("The" + noun1+ " was " + adjective2 + " and " + verb1 + "!");
+        System.out.println("The" + noun1+ " was " + adjective2 + " and " + verb + "!");
         System.out.println("I was " + adjective3 + "!");
 
         scanner.close();
