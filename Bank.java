@@ -30,6 +30,7 @@ public class Bank{
 
             default -> System.out.println("Not an option.");
         }
+      }
     }
         
     static void showBalance(double balance){
