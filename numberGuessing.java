@@ -15,10 +15,6 @@ public class numberGuessing{
         
             guess = scanner.nextInt();
 
-            if(guess < 1 || guess > 100){
-                System.out.print("Enter a number between 1 and 100");
-                continue; // to skip all the code below 
-            }
             attempts++;
 
             if(guess > randomNum){
