@@ -31,6 +31,10 @@ public class Bank{
             default -> System.out.println("Not an option.");
         }
     }
+        
+    static void showBalance(double balance){
+       System.out.printf("The account has: $ %.2f\n", balance);
+    }
         scanner.close();
     }
 
