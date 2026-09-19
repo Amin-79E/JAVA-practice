@@ -49,6 +49,31 @@ public class Bank{
 
         return amount;
     }
+
+        static double withdraw(double balance){
+
+        double amount;
+        System.out.print("Enter the amount to be withdrawn: ");
+        do{
+        amount = scanner.nextDouble(); 
+        if(amount <= 0){
+           System.out.print("Invalid input, try again for a real amount: ");
+        }
+        }while(amount <= 0);
+
+        if(amount > balance){
+            System.out.printf("Insufficient balance in the account, you can only draw the maximum which is: %.2f\n", balance);
+
+        }
+        else{
+            balance -= amount;
+        }
+        
+        return balance;
+    }
+    // i used a different logic for the methods purely for educational purposes.
+
+
         scanner.close();
     }
 
