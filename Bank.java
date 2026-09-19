@@ -35,6 +35,20 @@ public class Bank{
     static void showBalance(double balance){
        System.out.printf("The account has: $ %.2f\n", balance);
     }
+
+    static double deposit(){
+    
+        double amount;
+        System.out.print("Enter the amount to be deposited: ");
+        do{
+            amount = scanner.nextDouble(); 
+            if(amount <= 0){
+                System.out.print("Invalid input, try again for a real amount: ");
+            }
+        }while(amount <= 0);
+
+        return amount;
+    }
         scanner.close();
     }
 
