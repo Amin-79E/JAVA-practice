@@ -31,6 +31,7 @@ public class Bank{
             default -> System.out.println("Not an option.");
         }
       }
+        scanner.close();
     }
         
     static void showBalance(double balance){
