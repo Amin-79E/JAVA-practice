@@ -65,19 +65,14 @@ public class Bank{
 
         if(amount > balance){
             System.out.printf("Insufficient balance in the account, you can only draw the maximum which is: %.2f\n", balance);
-
         }
         else{
             balance -= amount;
         }
         
         return balance;
-    }
+  }
     // i used a different logic for the methods purely for educational purposes.
-
-
-        scanner.close();
-    }
 
     
 }
